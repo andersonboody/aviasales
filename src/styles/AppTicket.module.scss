@@ -1,0 +1,50 @@
+.ticket {
+  width: var(--width-card-desktop);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-light);
+  padding: 20px;
+
+  @media (max-width: 776px) {
+    width: var(--width-card-mobile);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-price {
+      color: var(--color-accent);
+      font-size: 24px;
+    }
+    &-company {
+      width: 110px;
+      height: 36px;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+  &__segment {
+    display: flex;
+    column-gap: 30px;
+
+    &-column {
+      width: 141px;
+      display: flex;
+      flex-direction: column;
+      &-title {
+        font-size: var(--font-size-small);
+        color: var(--color-ticket-title);
+      }
+      &-data {
+        font-weight: 700;
+      }
+    }
+  }
+}

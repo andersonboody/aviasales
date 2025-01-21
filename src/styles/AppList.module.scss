@@ -1,0 +1,19 @@
+.list__card {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.list__empty {
+  margin-top: 20px;
+  width: var(--width-card-desktop);
+  padding: 20px 20px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-light);
+
+  @media (max-width: 776px) {
+    width: var(--width-card-mobile);
+    padding: 10px 10px;
+    font-size: var(--font-size-small);
+  }
+}
